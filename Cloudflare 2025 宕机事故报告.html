@@ -6,7 +6,7 @@
     <meta name="description" content="深入分析2025年11月18日Cloudflare全球性服务中断事件的技术根因、影响范围与应对策略。研究级联故障链、控制平面配置漂移风险及网络基础设施弹性架构设计，为企业级系统可靠性提供实践指南。">
     <title>2025年11月18日 Cloudflare 宕机事故深度剖析 | Cloudflare Blog</title>
      <link rel="stylesheet" href="./src/style.css" />  <link rel="icon" href="vite.svg" />
-    <script src="https://unpkg.com/lucide@latest"></script>
+   
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
         
@@ -519,9 +519,12 @@
         </div>
     </footer>
 
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
+    <script type="module">
+import { createIcons, icons } from 'lucide';
+createIcons({icons});
+// import * as lucide from "lucide"
+//         // Initialize Lucide Icons
+//         lucide.createIcons();
         // Mobile Menu Toggle
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
